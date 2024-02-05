@@ -1,3 +1,3 @@
 # my-coding-temple-ship-log
 
-Author: Kareb Gonzalez 
+Author: Karen Gonzalez 
