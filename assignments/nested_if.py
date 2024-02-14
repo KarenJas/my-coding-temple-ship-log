@@ -74,4 +74,3 @@ try:
         print("File content:\n", content)
 except FileNotFoundError:
     pass
-# hi im awsome 
