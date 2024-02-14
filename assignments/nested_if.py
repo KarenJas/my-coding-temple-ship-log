@@ -1,6 +1,6 @@
 # 1. Nested Decisions: The Adventure Game 
     # Task 1 
-'''
+
 place = input("Choose a place: forest or cave? ")
 
 if place == "forest":
@@ -46,7 +46,7 @@ if food == "yes":
 elif food == "no":
     print("We recoment Gourmet Meals Caterers")
 
-'''
+
 # 3. Silent Failures: The Error Handler 
     # Task 1 
 try:
@@ -74,3 +74,4 @@ try:
         print("File content:\n", content)
 except FileNotFoundError:
     pass
+# hi im awsome 
