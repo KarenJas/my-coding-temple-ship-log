@@ -1,4 +1,3 @@
-'''
 # 1. Nested Decisions: The Adventure Game 
     # Task 1 
 place = input("Choose a place: forest or cave? ")
@@ -73,6 +72,7 @@ except FileNotFoundError:
     pass
 
 
+
 # 4. Nested Quick Decisions: The Shopping Assistant 
     # Task 1
 weather = input("Enter the weather: sunny, rainy, cold, windy, snowy: ")
@@ -81,7 +81,8 @@ clothing = "sunglasses" if weather == "sunny" else "umbrella" if weather == "rai
 accessory = "sunscreen" if weather == "sunny" else "waterprooof jacket" if weather == "rainy" else "scarf" if weather == "cold" else "windbreaker" if weather == "windy" else "gloves"
 print(clothing)
 print(accessory)
-'''
+
+
 
 # 5. The Silent Logger: System Monitor 
     # Task 1 
@@ -90,18 +91,20 @@ import random
 cpu_usage = random.randint(0, 100)
 memory_usage = random.randint(0, 100)
 disk_space = random.randint(0, 100)
+
 if cpu_usage > 90:
         print("High CPU usage!")
 elif cpu_usage > 80 and cpu_usage <= 90:
         pass
-
+        # Task 2
 if memory_usage > 90:
         print("High memory usage!")
 elif memory_usage > 80 and memory_usage <= 90:
-        pass
+        pass # Task 3 
 
 if disk_space > 90:
         print("Low disk space!")
 elif disk_space > 80 and disk_space <= 90:
         pass
 
+    
