@@ -1,6 +1,6 @@
+'''
 # 1. Nested Decisions: The Adventure Game 
     # Task 1 
-
 place = input("Choose a place: forest or cave? ")
 
 if place == "forest":
@@ -32,19 +32,16 @@ else:
 attendees = int(input("Enter number of attendees: "))
     #Task 3
 food = input("would you like to serve vegetarian food (yes/no)?: ")
-    #Task 1
-if attendees > 100 :
-    print("large hall")
-        # Task 2
-    print("You should obtain additional facilities like an audio system or projector")
-else: 
-    print("conference room")
-
+   
+    # Taskt 1
+print("large hall") if attendees >= 100 else print("confrence room")
+   
+    # Task 2
+print("We recomend adding an audio system") if attendees >= 100 else print("We recomend adding a projector")
+    
     # Task 3
-if food == "yes":
-    print("We recoment Veggie Delight Caters")
-elif food == "no":
-    print("We recoment Gourmet Meals Caterers")
+print("We recomend Veggie Delight Caters") if food == "yes" else print("We recoment Gourmet Meals Caterers")
+
 
 
 # 3. Silent Failures: The Error Handler 
@@ -69,8 +66,42 @@ except SyntaxError:
 file_name = input("Enter filename: ")
 
 try:
-    with open(file_name, 'r') as file:
+    with open(file_name) as file:
         content = file.read()
-        print("File content:\n", content)
+        print("File content: ", content)
 except FileNotFoundError:
     pass
+
+
+# 4. Nested Quick Decisions: The Shopping Assistant 
+    # Task 1
+weather = input("Enter the weather: sunny, rainy, cold, windy, snowy: ")
+clothing = "sunglasses" if weather == "sunny" else "umbrella" if weather == "rainy" else "sweater" if weather == "cold" else "hat" if weather == "windy" else "boots" # Task 2 
+    # Task 3
+accessory = "sunscreen" if weather == "sunny" else "waterprooof jacket" if weather == "rainy" else "scarf" if weather == "cold" else "windbreaker" if weather == "windy" else "gloves"
+print(clothing)
+print(accessory)
+'''
+
+# 5. The Silent Logger: System Monitor 
+    # Task 1 
+import random
+
+cpu_usage = random.randint(0, 100)
+memory_usage = random.randint(0, 100)
+disk_space = random.randint(0, 100)
+if cpu_usage > 90:
+        print("High CPU usage!")
+elif cpu_usage > 80 and cpu_usage <= 90:
+        pass
+
+if memory_usage > 90:
+        print("High memory usage!")
+elif memory_usage > 80 and memory_usage <= 90:
+        pass
+
+if disk_space > 90:
+        print("Low disk space!")
+elif disk_space > 80 and disk_space <= 90:
+        pass
+
