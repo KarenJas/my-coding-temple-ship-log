@@ -123,3 +123,12 @@ print(greater_than_5)
     # Task 3 
 number_7 = numbers_2.count(7)
 print(number_7)
+
+
+# 5. Deep Dive into Python Lists
+    # Task 1 
+students = ["John", "Doe", "Jane", "Smith"]
+grades = [85, 90, 78, 88]
+activities = ["Football", "Music", "Art", "Dance"]
+school_data = [students,grades,activities]
+    # Task 2 
