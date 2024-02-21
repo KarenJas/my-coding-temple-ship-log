@@ -130,5 +130,26 @@ print(number_7)
 students = ["John", "Doe", "Jane", "Smith"]
 grades = [85, 90, 78, 88]
 activities = ["Football", "Music", "Art", "Dance"]
-school_data = [students,grades,activities]
+school_data = [ ]
+
+for i in range(len(students)):
+    school_dic = {"name": students[i], "grade": grades[i], "activity": activities[i]}
+    school_data.append(school_dic)
+
+print(school_data)
+   
     # Task 2 
+for i in range(len(grades)-1):
+    if grades[i] < 80:
+        del school_data[i]
+        
+print(school_data)
+
+    # Task 3 
+for students in school_data:
+    students["status"] = "Passed"
+
+print(school_data)
+
+
+        
