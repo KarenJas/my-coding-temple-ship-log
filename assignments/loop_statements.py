@@ -1,4 +1,4 @@
-'''1. The Range Riddle
+'''1. The Range Riddle'''
 import random
     #Task 1: Code Correction
 for i in range(5,2,-1):
@@ -302,7 +302,7 @@ stop_genre = 'Hip-hop'
 while i < len(genres) and genres[i] != stop_genre:
     print("Remixing: " + genres[i])
     i += 1  # Move to the next track
-    '''
+  
     #Task 3: Light Show Technician Loop
 # Our playlist needs a light show
 genres = ['Jazz', 'Rock', 'Hip-hop', 'Classical']
@@ -317,11 +317,18 @@ for index in range(len(genres)):
     #Task 1: The Selective DJ
 # Selective playlist slice
 selected_genres = genres[1:4]  # From Rock to Classical
-new_genres = selected_genres [1:4]
 
-# Loop through the selected slice
+# Loop through the selected slic
 for genre in selected_genres:
     print("Selective play: " + genre)
 
-for genre in new_genres:
-    print("Selective play: " + genre)
+    #Task 2: The One-Liner Band with List Comprehensions
+# List comprehension to append "Music" to each genre
+music_genres = [genre + " Music" for genre in genres]
+print(music_genres)
+
+    #Task 3: Numerical Beats with range
+# Countdown with range
+for number in range(10, 0, -1):
+    print(number)
+print("The beat drops now!")
