@@ -240,4 +240,88 @@ deck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', '
 print(deck)
 random.shuffle(deck)
 print(deck)
-'''
+
+#8. The Random Challenge Course
+    #Task 1: The Guessing Game
+game_number = random.randint(1,5)
+input_guess = int(input("Guess a number: "))
+if game_number == input_guess:
+    print("You are correct!")
+elif input_guess < game_number:
+    int(input("guess higher: "))
+    if game_number == input_guess:
+        print("You are correct!")
+    else:
+        print("better luck next time!")
+elif input_guess > game_number:
+    int(input("Guess lower: "))
+    if game_number == input_guess:
+        print("You are correct!")
+    else:
+        print("better luck next time!")
+
+    #Task 2: The Magic 8-Ball
+fortunes = ["Yes, definitely.", "No, never.", "Ask again later.", "Cannot predict now.", "Don't count on it.", "Most likely.", "Outlook not so good.", "You may rely on it.", "Reply hazy, try again.", "Concentrate and ask again."]
+
+random_fortune = random.choice(fortunes)
+print("Magic 8-Ball says: " + random_fortune)
+
+    #Task 3: The Card Picker
+suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+random_card = [random.choice(suits),random.choice(ranks)]
+user = str(input("Guess the suit or rank: "))
+if user in random_card:
+    print("You are Correct!")
+else:
+    print("Better luck nect time!")
+
+
+#9. Looping Lists - The Rhythm of Repetition
+    #Task 1: The for Loop DJ Set
+# Our playlist of genres
+genres = ['Jazz', 'Rock', 'Hip-hop', 'Classical']
+
+# Initialize track number
+track_number = 1
+
+# Spinning through the genres
+for genre in genres:
+    print(f"Track {track_number}: Now playing {genre}")
+    track_number += 1
+
+    #Task 2: The Remix Artist with while
+# Our playlist is still going
+genres = ['Jazz', 'Rock', 'Hip-hop', 'Classical']
+i = 0  # We start at the first track
+
+# Keep the party alive until we've reached a specific genre
+stop_genre = 'Hip-hop'
+
+# Keep the party alive until we've reached the end or the stop_genre
+while i < len(genres) and genres[i] != stop_genre:
+    print("Remixing: " + genres[i])
+    i += 1  # Move to the next track
+    '''
+    #Task 3: Light Show Technician Loop
+# Our playlist needs a light show
+genres = ['Jazz', 'Rock', 'Hip-hop', 'Classical']
+unsuitable_genre = 'Classical'
+
+for index in range(len(genres)):
+    if genres[index] == unsuitable_genre:
+        continue  # Skip the light show for this genre
+    print(f"Track {index + 1}: {genres[index]} - Light show is on!")
+
+#10. Advanced Looping Techniques
+    #Task 1: The Selective DJ
+# Selective playlist slice
+selected_genres = genres[1:4]  # From Rock to Classical
+new_genres = selected_genres [1:4]
+
+# Loop through the selected slice
+for genre in selected_genres:
+    print("Selective play: " + genre)
+
+for genre in new_genres:
+    print("Selective play: " + genre)
