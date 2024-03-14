@@ -1,4 +1,4 @@
-'''1. The Range Riddle'''
+#1. The Range Riddle
 import random
     #Task 1: Code Correction
 for i in range(5,2,-1):
